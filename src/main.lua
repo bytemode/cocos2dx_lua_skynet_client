@@ -7,8 +7,13 @@ require "cocos.init"
 
 local function main()
     --require("app.MyApp"):create():run()
-	
-	
+    
+    --初始化pbc	
+    require("pbc.pbc")
+
+    --测试代码
+    require("test.test")
+
 end
 
 local status, msg = xpcall(main, __G__TRACKBACK__)
