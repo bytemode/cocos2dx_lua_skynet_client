@@ -13,7 +13,6 @@ local function main()
 
     --测试代码
     require("test.test")
-
 end
 
 local status, msg = xpcall(main, __G__TRACKBACK__)

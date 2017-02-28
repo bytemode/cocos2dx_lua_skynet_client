@@ -38,5 +38,19 @@ local ret_body_data = protobuf.decode("PbLogin.MsgLoginReq", body_data)
 dump(ret_body_data)
 
 
+print("测试网络链接")
+
+local ip = 127.0.0.1
+local port = 8000
+
+local NetMgr = require("net.NetMgr")
+local net = NetMgr:getInstance()
+
+print("链接")
+net:connect(ip, port)
+print("发送数据")
+net:send("PbLogin.MsgLoginReq", {platform = 1, user_id = "sun"})
+
+
 
 
