@@ -1,14 +1,13 @@
-g_require("src.pbc.protobuf")
+require("src.pbc.protobuf")
 
 protobuf.register_pb = function(filename)
-    local buffer = c_readBData(filename)
+    local buffer = read_file_c(filename)
     protobuf.register(buffer)
 end
 
 local proto_conf = {
     "src/proto/pbhead.pb",
     "src/proto/pblogin.pb",
-    "src/proto/pbroom.pb",
 }
 
 protobuf.load_proto = function()

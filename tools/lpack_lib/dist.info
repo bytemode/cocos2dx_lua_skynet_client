@@ -1,0 +1,14 @@
+--- This file is part of LuaDist project
+
+name = "lpack"
+version = "5.1"
+
+desc = "A library for packing and unpacking binary data. The library adds two functions to the string library: pack and unpack."
+author = "Luiz Henrique de Figueiredo, Ignacio Castańo, Roberto Ierusalimschy"
+url = "http://www.tecgraf.puc-rio.br/~lhf/ftp/lua/#lpack"
+license = "Public domain"
+maintainer = "Peter Drahoš"
+
+depends = {
+	"lua ~> 5.1"
+}
