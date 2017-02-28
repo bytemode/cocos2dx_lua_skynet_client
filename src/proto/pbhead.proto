@@ -1,0 +1,8 @@
+//协议头
+package PbHead;
+
+message MsgHead{
+    required int32 msgtype = 1;     //协议数据类型 1表示请求包 2表示响应包 3 推送包
+    required string msgname = 2;    //协议结构名
+    required int32 msgret = 3;      //通讯协议出错码 只用在响应包中 非0表示出错 出错情况下没有PBBody
+}
