@@ -27,3 +27,9 @@
 *.exe
 *.out
 *.app
+/frameworks/cocos2d-x
+/frameworks/runtime-src/proj.win32/cocos2dx_lua_skynet_client.sdf
+/frameworks/runtime-src/proj.win32/Debug.win32
+/frameworks/runtime-src/proj.win32/cocos2dx_lua_skynet_client.opensdf
+/simulator
+/runtime
