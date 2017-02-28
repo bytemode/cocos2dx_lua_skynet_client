@@ -40,8 +40,8 @@ dump(ret_body_data)
 
 print("测试网络链接")
 
-local ip = 127.0.0.1
-local port = 8000
+local ip = "192.168.14.129"
+local port = 5000
 
 local NetMgr = require("net.NetMgr")
 local net = NetMgr:getInstance()

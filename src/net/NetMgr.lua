@@ -1,6 +1,6 @@
 local NetMgr = class("NetMgr")
 
-local socket = require("socket")
+local socket = require("luasocket.socket")
 
 local scheduler = cc.Director:getInstance():getScheduler() 
 
@@ -34,10 +34,10 @@ function NetMgr:connect(ip, port)
             
             self.precess_id = scheduler:scheduleScriptFunc(function( ... )
                 self:processSocketIO()
-            end, 0.05)
+            end, 0.05, false)
         end
     end 
-    self.scheduler_id = scheduler:scheduleScriptFunc(checkConnect, 0.05)
+    self.scheduler_id = scheduler:scheduleScriptFunc(checkConnect, 0.05, false)
 end
 
 function NetMgr:stop()
