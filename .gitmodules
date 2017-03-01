@@ -1,0 +1,6 @@
+[submodule "tool/pbc"]
+	path = tool/pbc
+	url = https://github.com/cloudwu/pbc.git
+[submodule "tool/lpack"]
+	path = tool/lpack
+	url = https://github.com/gameloses/lpack.git
