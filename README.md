@@ -1,3 +1,5 @@
+# 解决的问题 
+cocos2dx-lua 使用socket和pbc和skynet完成通信
 # 关于
 cocos2dx-lua client for skynet 
 cocos2dx使用luasocket 和 protobuf 连接skynet.   
