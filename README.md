@@ -1,5 +1,5 @@
-# cocos2dx_lua_skynet_client   
-cocos2dx-lua client for skynet   
+# 关于
+cocos2dx-lua client for skynet 
 cocos2dx使用luasocket 和 protobuf 连接skynet.   
 本例子没有修改cocos2dx引擎任何代码，只是添加了用于解析protobuf的pbc和   
 用于打包解包的lpack.   
@@ -16,9 +16,15 @@ git submodule init
 git submodule update    
 
 # 把cocos引擎的cocos2d-x目录放到frameworks下   
-
-# 编译项目   
-
-# 开启skynet服务器 进行通信测试。  
+cocos2dx 我没有添加submodule. 创建cocos项目就行了。没有对cocos版本依赖。
+# 编译项目   
+  win32和cocos都已经编译测试过了，下面给出的服务端也已经测试过了。
+# 开启skynet服务器 进行通信测试。 
 
 skynet服务器地址：https://github.com/gameloses/skynet_pbc.git 
+
+# 教程
+详细的教程见wiki。
+
+# 问题
+有问题就提issue.
