@@ -65,7 +65,7 @@ end
 
 function NetMgr:processInput()
     --检测是否有可读的socket
-    local recvt, sendt, status = socket.select({self.socket_}, nil, 1)
+    local recvt, sendt, status = socket.select({self.socket_}, nil, 0)
     print("input", #recvt, sendt, status)
     if #recvt <= 0 then
         return;
